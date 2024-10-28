@@ -1,0 +1,1 @@
+"Não consegui pensar numa boa solução :/"
