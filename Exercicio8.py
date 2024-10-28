@@ -1,22 +1,3 @@
-
-def bubbleSort(self):                           
-    l = 0;
-    r = self.__nItems - 1;
-
-    while(l < r):
-        for inner in range(l, r):
-            if(self.__a[inner] > self.__a[inner + 1]):
-                self.swap(inner, inner + 1);
-
-        r-=1;
-
-        for inner in range(r, l, -1):
-            if(self.__a[inner] < self.__a[inner - 1]):
-                self.swap(inner, inner - 1);
-
-        l+=1;
-
-
 class BubbleSorter:
     def __init__(self, arr):
         self.__a = arr        

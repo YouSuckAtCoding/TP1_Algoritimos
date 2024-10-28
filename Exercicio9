@@ -1,26 +1,15 @@
 
-
+# Não é necessaria nenhuma alteração, em python a comparação é feita com strings com os operadoes padrão.
 class BubbleSorter:
     def __init__(self, arr):
         self.__a = arr        
         self.__nItems = len(arr)  
 
-    def bubbleSort(self):
-        l = 0
-        r = self.__nItems - 1
-
-        while l < r:
-            for inner in range(l, r):
-                if self.__a[inner] > self.__a[inner + 1]:
-                    self.__a[inner], self.__a[inner + 1] = self.__a[inner + 1], self.__a[inner]  
-
-            r -= 1
-
-            for inner in range(r, l, -1):
-                if self.__a[inner] < self.__a[inner - 1]:
-                    self.__a[inner], self.__a[inner - 1] = self.__a[inner - 1], self.__a[inner] 
-
-            l += 1
+    def bubbleSort(self):                           
+      for last in range(self.__nItems-1, 0, -1):
+         for inner in range(last):                
+            if self.__a[inner] > self.__a[inner+1]:  
+                self.__a[inner], self.__a[inner + 1] = self.__a[inner + 1], self.__a[inner] ;   
 
     def get_sorted_array(self):
         return self.__a
